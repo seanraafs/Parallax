@@ -31,7 +31,7 @@ $(document).ready(function () {
         {
           scrollTop: target.offset().top,
         },
-        1600
+        1000
       );
     }
   });
