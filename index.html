@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assets/src/style.css">
     <link rel="stylesheet" href="./assets/src/styles.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -20,11 +21,15 @@
         </nav>
     </header>
     <section class="Home">
-        <h1>Selamat Datang Di Project Parallax Sean</h1>
-        <img src="./assets/img/utama.png" class="mountains" alt="">
+        <h1 data-aos="fade-up" data-aos-duration="2000">Selamat Datang Di Project Parallax Sean</h1>
+        <img src="./assets/img/utama.png" class="mountains" data-aos="fade-up" data-aos-duration="2000"  alt="">
         <img src="./assets/img/bintang.png" class="stars" alt="">
-        <img src="./assets/img/kanan.png" class="kanan" alt="">
-        <img src="./assets/img/kiri.png" class="kiri" alt="">
+        <img src="./assets/img/kanan.png" class="kanan" data-aos="fade-left"
+        data-aos-duration="2000"
+         alt="">
+        <img src="./assets/img/kiri.png" class="kiri" data-aos="fade-rigt"
+        data-aos-duration="2000"
+         alt="">
         <!-- awan -->
         <img src="./assets/img/awan kanan.png" class="awan-kiri" alt="">
         <img src="./assets/img/awan kiri.png" class="awan-kanan" alt="">
@@ -205,7 +210,10 @@
         <p class="copyright">Copyright &copy; 2023. All rights reserved.</p>
     </footer>
 
-
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
     <script src="./assets/src/script.js"></script>
 </body>
 
