@@ -11,13 +11,7 @@
     <link rel="stylesheet" href="./assets/src/styles.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script>
-        let loader = document.getElementById("loader");
-        window.addEventListener("load", function () {
-            loader.style.display = "none";
-        })
 
-    </script>
 </head>
 
 <body>
@@ -234,6 +228,13 @@
         </ul>
         <p class="copyright">Copyright &copy; 2023. All rights reserved.</p>
     </footer>
+
+    <script>
+    onload = function(){
+        let loader = document.getElementById("loader");
+        loader.style.display = "none";
+    }
+    </script>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
