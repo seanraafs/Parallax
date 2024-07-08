@@ -6,14 +6,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./assets/src/loader.css">
     <link rel="stylesheet" href="./assets/src/style.css">
     <link rel="stylesheet" href="./assets/src/styles.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script>
+        let loader = document.getElementById("loader");
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
+        })
+
+    </script>
 </head>
 
 <body>
-
+    <div class="loader" id="loader">
+        <div class="justify-content-center jimu-primary-loading"></div>
+    </div>
+    
     <header>
         <h1>Sean</h1>
         <nav>
@@ -24,10 +35,11 @@
     <section class="Home">
         <h1 data-aos="fade-up" data-aos-duration="2000">Selamat Datang Di Project Parallax Sean</h1>
         <img src="./assets/img/utama.png" class="mountains" data-aos="fade-up" data-aos-duration="2000" alt="">
+
         <img src="./assets/img/bintang.png" class="stars" alt="">
         <img src="./assets/img/kanan.png" class="kanan" data-aos="fade-left" data-aos-duration="2000" alt="">
         <img src="./assets/img/kiri.png" class="kiri" data-aos="fade-rigt" data-aos-duration="2000" alt="">
-        <!-- awan -->
+
         <img src="./assets/img/awan kanan.png" class="awan-kiri" alt="">
         <img src="./assets/img/awan kiri.png" class="awan-kanan" alt="">
     </section>

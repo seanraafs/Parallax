@@ -1,3 +1,4 @@
+
 window.onscroll = () => {
   document.querySelector(".mountains").style.marginBottom = -scrollY + "px";
 
